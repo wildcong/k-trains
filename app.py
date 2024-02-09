@@ -15,12 +15,12 @@ from ktrains.srt.srt import SRT
 from ktrains.utils import Stations, save_to_log, LINKS
 
 language = st.sidebar.selectbox(
-    _("Select your language"), ["English", "한국어", "Italiano", "Español"]
+    _("Select your language"), ["한국어", "English", "Italiano", "Español"]
 )
-if language == "English":
-    language = "en"
-elif language == "한국어":
+if language == "한국어":
     language = "kr"
+elif language == "English":
+    language = "en"
 elif language == "Español":
     language = "es"
 elif language == "Italiano":
